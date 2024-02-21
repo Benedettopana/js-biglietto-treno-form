@@ -14,7 +14,7 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 
 1. Inseriamo a vista due input nella pagina HTML dove chiederemo di inserire l'età ed i Km che si vogliono percorrere.
 1. Aggiungiamo un bottone.
-1. Stampare in concole il risultato del prezzo stimato.
+1. Stampare in console il risultato del prezzo stimato.
 
 - ## MILESTONE 2: 
 1. Realizzo un form di domanda dove l'utente può inserire i suoi dati e visualizzare il risultato del suo prospetto di "Ticket" in base ai dati che ha inserito precedentemente.

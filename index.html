@@ -14,15 +14,82 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <p class="my-3 ">
-      Inserisci i tuoi dati
-    </p>
-    <form action="">
-      <input type="text" class="inputAge form-control" placeholder="Inserisci la tua età">
-      <input type="text" class="inputKm form-control" placeholder="Inserisci i Km che vuoi percorrere">
-      <button class="btnSend btn btn-primary m-3">Invio</button>
-    </form>
+
+  <div class="container mt-5 ">
+    <div class="container-fluid rounded-3 bg-primary p-3 ">
+      <h3 class="text-center text-white my-2 ">Calcola il prezzo del tuo biglietto</h3>
+      <div class="row row-cols-3 my-4 text-white">
+        <div class="col">
+          <label for="inputName">Inserisci il tuo Nome e Cognome</label>
+          <input type="text" class="inputName form-control" placeholder="Nome">
+        </div>
+        <div class="col">
+          <label for="inputAge" >Inserisci La tua età</label>
+          <input type="text" class="inputAge form-control" placeholder="Inserisci la tua età">
+        </div>
+        <div class="col">
+          <label for="inputKm">Inserisci i Km da percorrere</label>
+          <input type="text" class="inputKm form-control" placeholder="Km">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center ">
+        <button type="button" class="btnSend btn btn-light">Genera</button>
+        
+      </div>
+      <!-- <form action="">
+        <input type="text" class="inputAge form-control" placeholder="Inserisci la tua età">
+        <input type="text" class="inputKm form-control" placeholder="Inserisci i Km che vuoi percorrere">
+        
+      </form> -->
+    </div>
+    
+    <section class=" ">
+      <div class="container-fluid rounded-3 bg-primary p-3 my-5 prova2 prova ">
+        <h3 class="text-center text-white my-2 ">Ecco il tuo biglietto</h3>
+        
+        <div class="row p-4 ">
+          <div class="col-3 bg-danger rounded-start-3 p-5 ">
+            <h5 class="text-uppercase ">NOME E COGNOME:</h5>
+            <p id="nomeGenerato">
+            </p>
+          </div>
+          <div class="col-9 bg-white rounded-end-3 p-5 ">
+            <div class="row ">
+              <!-- OFFERTA -->
+              <div class="col-4">
+                <h5>Offerta</h5>
+                <p class="mt-5 " id="offer">
+  
+                </p>
+              </div>
+              <!-- N carrozza -->
+              <div class="col-2">
+                <h5>N Carrozza</h5>
+                <p class="mt-5 " id="train">
+  
+                </p>
+              </div>
+  
+              <!-- COD Biglietto -->
+              <div class="col-3">
+                <h5>Codice Biglietto</h5>
+                <p class="mt-5 " id="codTicket">
+  
+                </p>
+              </div>
+  
+              <!-- Costo biglietto -->
+              <div class="col-3">
+                <h5>Costo Biglietto</h5>
+                <div class="mt-5 " id="cost">
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script src="./js/script.js"></script>

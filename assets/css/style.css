@@ -1,3 +1,15 @@
 body{
   font-family: "Montserrat", sans-serif;
+  background-image: url(../img/bg-treni.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.debug{
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.prova{
+  /* display: none; */
 }

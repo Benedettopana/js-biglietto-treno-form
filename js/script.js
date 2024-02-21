@@ -18,10 +18,16 @@ let car;
 const inputAge = document.querySelector('.inputAge');
 const inputKm = document.querySelector('.inputKm');
 const inputName = document.querySelector('.inputName');
+const prova = document.querySelector('.prova');
 
 // Bottoni
 const btnSend = document.querySelector('.btnSend');
 const btnReset = document.querySelector('.btnReset');
+const btnBlock = document.querySelector('.btnBlock');
+
+btnBlock.addEventListener('click',function(){
+  prova.classList.toggle('d-none');
+})
 
 //Prendo i valori dall'utente.
 btnSend.addEventListener('click',function(event){
@@ -93,9 +99,8 @@ btnSend.addEventListener('click',function(event){
 
 // tasto reset
 btnReset.addEventListener('click',function(){
-  // resetto il titolo
-  // titoloInput.innerHTML = testoTitoloInput;
   // resetto il value dell'input
+  prova.classList.toggle('d-none');
   inputKm.value = '';
   inputAge.value = '';
   inputName.value = '';

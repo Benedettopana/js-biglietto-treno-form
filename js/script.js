@@ -21,6 +21,7 @@ const inputName = document.querySelector('.inputName');
 
 // Bottoni
 const btnSend = document.querySelector('.btnSend');
+const btnReset = document.querySelector('.btnReset');
 
 //Prendo i valori dall'utente.
 btnSend.addEventListener('click',function(event){
@@ -91,8 +92,14 @@ btnSend.addEventListener('click',function(event){
 })
 
 // tasto reset
-
-
+btnReset.addEventListener('click',function(){
+  // resetto il titolo
+  // titoloInput.innerHTML = testoTitoloInput;
+  // resetto il value dell'input
+  inputKm.value = '';
+  inputAge.value = '';
+  inputName.value = '';
+})
 
 
 
